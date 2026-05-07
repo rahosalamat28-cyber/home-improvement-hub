@@ -1,58 +1,50 @@
-/* General Design Specifications */
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8fafc;
-    color: #333;
-}
+/* General Setup */
+body { margin: 0; font-family: 'Arial', sans-serif; }
+.container-fluid { display: flex; align-items: center; justify-content: space-between; padding: 0 40px; }
 
-/* Branch 1: Navigation & Hero Styling */
-.navbar {
-    background-color: #0056b3; /* Solar Blue */
+/* Top Bar Styling */
+.top-announcement-bar {
+    background-color: #f3941e;
     color: white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    font-size: 14px;
+}
+.scrolling-ticker { width: 50%; background: #fffdf5; color: #333; border-radius: 20px; padding: 5px 15px; }
+.social-icons a { color: white; margin-right: 15px; text-decoration: none; }
+
+/* Main Nav Styling */
+.main-header { background: white; padding: 15px 0; border-bottom: 1px solid #eee; }
+.main-menu { list-style: none; display: flex; }
+.main-menu li { margin: 0 12px; }
+.main-menu a { text-decoration: none; color: #444; font-weight: 500; font-size: 15px; }
+.highlight-green { color: #2d8e2d !important; font-weight: bold !important; }
+
+/* Category Bar Styling */
+.category-nav { background-color: #1b6382; color: white; }
+.category-list { list-style: none; display: flex; width: 100%; margin: 0; padding: 0; }
+.category-list > li { border-right: 1px solid rgba(255,255,255,0.1); }
+.category-list > li > a { 
+    display: block; 
+    padding: 15px 20px; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 14px; 
+    white-space: nowrap;
 }
 
-.hero {
-    background-color: white;
-    padding: 100px 20px;
-    text-align: center;
-    border-bottom: 1px solid #e2e8f0;
-}
+.all-brands { background-color: rgba(0,0,0,0.1); font-weight: bold; }
 
-.cta-button {
-    background-color: #facc15; /* Energy Yellow */
-    color: #1e3a8a;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 12px; /* Soft rounded */
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+/* Dropdown Menu Logic */
+.dropdown { position: relative; }
+.dropdown-menu { 
+    display: none; 
+    position: absolute; 
+    background: white; 
+    min-width: 180px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    z-index: 100;
+    top: 100%;
 }
-
-/* Branch 2: Service Cards Styling */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mobile-first grid */
-    gap: 30px;
-    padding: 50px 10% ;
-}
-
-.service-card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px; /* Soft rounded cards */
-    border: 1px solid #e2e8f0;
-    text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Subtle shadows */
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-}
+.dropdown-menu li a { color: #333; padding: 10px 20px; display: block; text-decoration: none; border-bottom: 1px solid #f0f0f0; }
+.dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu li a:hover { background: #f3941e; color: white; }
