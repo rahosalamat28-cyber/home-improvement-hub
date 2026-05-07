@@ -120,14 +120,26 @@ body { margin: 0; font-family: 'Arial', sans-serif; }
 }
 
 /* Right Side Styling */
+/* Enhanced Hero Image Control */
 .hero-image {
     flex: 1;
     min-width: 300px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-wrapper img {
-    max-width: 100%;
+    /* Controls the width while maintaining aspect ratio */
+    max-width: 100%; 
     height: auto;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+    
+    /* Optional: Set a specific max-height if the image is too tall */
+    max-height: 500px; 
+    
+    /* Smooths the edges of the composite */
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1)); 
+    
+    /* Ensures the image doesn't stretch unnaturally */
+    object-fit: contain; 
 }
