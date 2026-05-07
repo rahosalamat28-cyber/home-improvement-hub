@@ -48,3 +48,86 @@ body { margin: 0; font-family: 'Arial', sans-serif; }
 .dropdown-menu li a { color: #333; padding: 10px 20px; display: block; text-decoration: none; border-bottom: 1px solid #f0f0f0; }
 .dropdown:hover .dropdown-menu { display: block; }
 .dropdown-menu li a:hover { background: #f3941e; color: white; }
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.hero-section {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* [cite: 18] Ensures responsiveness on mobile */
+    align-items: center;
+    gap: 40px;
+}
+
+/* Left Side Styling */
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-content h1 {
+    color: #1b6382; /* Deep Teal [cite: 14] */
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.benefit-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.benefit-list li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.benefit-list i {
+    color: #2d8e2d; /* Green for checkmarks [cite: 14] */
+    margin-right: 10px;
+}
+
+/* Bright Custom Quote Button */
+.quote-btn {
+    display: inline-block;
+    background-color: #f3941e; /* Orange/Solar Gold [cite: 14] */
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+}
+
+.quote-btn:hover {
+    background-color: #e67e22;
+}
+
+/* Right Side Styling */
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
