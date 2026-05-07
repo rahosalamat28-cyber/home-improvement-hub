@@ -1,58 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Home Solar | Save on Energy</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">HomePro Solar</div>
-            <a href="tel:5551234567" class="phone-link">Call: (555) 123-4567</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h1>Lower Your Energy Bill with Premium Solar</h1>
-            <p>Qualified homeowners save an average of $1,500/year.</p>
-            
-            <form id="lead-form" action="https://formspree.io/f/xykopwwg" method="POST" class="solar-form">
-    <h3>Get Your Free Quote</h3>
-    
-    <label for="bill">Estimated Monthly Electric Bill:</label>
-    <select id="bill" name="monthly_bill" required>
-        <option value="">Select an amount...</option>
-        <option value="under-100">$0 - $100</option>
-        <option value="100-200">$100 - $200</option>
-        <option value="200-plus">$200+</option>
-    </select>
-
-    <label for="property">Property Ownership:</label>
-    <div class="radio-group">
-        <input type="radio" name="ownership" value="owner" required> I Own My Home
-        <input type="radio" name="ownership" value="renter"> I Rent
+<header class="header-container">
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <span>📞 +1 (555) SOLAR-PRO</span>
+                <span>📧 sales@homeprosolar.com</span>
+            </div>
+            <div class="promo-text">
+                Today's Rate: <strong>$0.12/kWh Offset</strong>
+            </div>
+        </div>
     </div>
 
-    <input type="text" name="full_name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    
-    <button type="submit" class="cta-button">Check Eligibility</button>
-</form>
-        </section>
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo">
+                <h1>HOME PRO <span>SOLAR</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cta-button">
+                <a href="#" class="btn-quote">Get a Quote</a>
+            </div>
+        </div>
+    </nav>
 
-        <section class="trust-bars">
-            <p>Trusted Partners: <strong>SunPower | Home Depot | EcoFlow</strong></p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 HomePro Solar. All rights reserved.</p>
-        <p><small>Affiliate Disclosure: We earn a commission for qualified referrals at no extra cost to you.</small></p>
-    </footer>
-    <script src="leads.js"></script>
-</body>
-</html>
+    <div class="category-bar">
+        <div class="container">
+            <ul class="category-menu">
+                <li class="dropdown">
+                    <a href="#">Inverters ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Huawei Smart PV</a></li>
+                        <li><a href="#">Growatt Storage</a></li>
+                        <li><a href="#">Solis Single Phase</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Solar Panels ▼</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Longi Solar</a></li>
+                        <li><a href="#">Jinko Solar</a></li>
+                        <li><a href="#">Canadian Solar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mounting Structures</a></li>
+                <li><a href="#">Battery Storage</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
